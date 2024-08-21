@@ -22,6 +22,10 @@ PLAYER_VEL = 5 # Player Speed
 window = pygame.display.set_mode((WIDTH,HEIGHT))
 
 
+def get_background(name):
+    image = pygame.image.load(join("assets","Background",name))
+    _,_,width,height = image.get_rect()
+
 def main(window):
     """ This creates a Clock object that helps control the frame rate of the game.
     The Clock object can be used to manage how fast your game runs by controlling the time between frames."""
